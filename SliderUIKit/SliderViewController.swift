@@ -19,10 +19,13 @@ class SliderViewController: UIViewController {
     }
     
     @IBAction func sliderAction() {
+        sliderValue.text = "\(Int(slider.value))"
+        let alphaComponent = 1 - slider.value / 100
+        slider.thumbTintColor = UIColor.red.withAlphaComponent(CGFloat(alphaComponent))
     }
     
     private func setupLabel() {
-        sliderValue.text = "50"
+        sliderValue.text = "0"
         sliderValue.font = UIFont.systemFont(ofSize: 32)
         sliderValue.textAlignment = .center
     }
@@ -33,7 +36,7 @@ class SliderViewController: UIViewController {
         slider.maximumValue = 100
         slider.minimumTrackTintColor = .green
         slider.maximumTrackTintColor = .blue
-        slider.thumbTintColor = UIColor.red.withAlphaComponent(0.5)
+        slider.thumbTintColor = UIColor.red.withAlphaComponent(1)
     }
 
 
