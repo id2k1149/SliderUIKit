@@ -27,6 +27,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FCD-pf-U3C">
                                         <rect key="frame" x="-2" y="84.333333333333314" width="347" height="31"/>
+                                        <connections>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Zpn-z9-Pwv"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
