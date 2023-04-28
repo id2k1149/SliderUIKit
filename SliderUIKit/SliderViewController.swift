@@ -14,7 +14,15 @@ class SliderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupLabel()
+        
+        
+    }
+    
+    private func setupLabel() {
+        sliderValue.text = "50"
+        sliderValue.font = UIFont.systemFont(ofSize: 32)
+        sliderValue.textAlignment = .center
     }
 
 
